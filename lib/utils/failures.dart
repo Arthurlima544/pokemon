@@ -7,3 +7,7 @@ abstract class Failure extends Equatable {
   @override
   get props => [message];
 }
+
+class GenericFailure extends Failure {
+  const GenericFailure(super.message);
+}
